@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #1c1c1c; /* Dark green background */
+    color: #ffffff;
+    font-size: 1.1rem; /* Slightly increased for better readability */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #1c1c1c;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; /* Increased margin for spacing */
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-family: 'Creepster', cursive;
+    color: #1de9b6;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px; /* Increased gap between links */
+    align-items: center;
+}
+
+.nav-links li a {
+    font-family: 'Creepster', cursive;
+    color: #ffffff;
+    text-decoration: none; /* Removed underline */
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0; /* Added padding for better spacing */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #1de9b6;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #1de9b6;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Navigation Buttons */
+.join-btn, .buy-btn, .cta-button, .whitepaper-btn {
+    padding: 12px 24px; /* Ensured same padding for all buttons */
+    border-radius: 12px; /* Uniform rounding for all buttons */
+    font-family: 'Creepster', cursive; /* Consistent font style */
+    font-size: 1rem; /* Ensure the same font size for all */
+    text-align: center;
+    color: #fff; /* Set text color to white for contrast */
+    transition: all 0.3s ease;
+    display: inline-flex; /* Use inline-flex to keep buttons inline */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.join-btn {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #1de9b6; /* Outline */
+}
+
+.join-btn:hover {
+    background-color: #1de9b6; /* Change background on hover */
+    color: #1c1c1c; /* Change text color on hover */
+}
+
+.buy-btn {
+    background-color: #004d40; /* Main call-to-action button */
+    border: 2px solid #004d40; /* Matching border */
+}
+
+.buy-btn:hover {
+    background-color: #1c1c1c; /* Darker shade on hover */
+}
+
+/* Ensuring proper placement of buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Full-width background alignment */
+    background-image: url('assets/hero-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    z-index: 1;
+}
+
+.hero .content {
+    z-index: 1;
+    color: #e8f9f5;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    color: #1de9b6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-width: 900px;  /* Text wrapping control */
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px; /* Uniform padding for CTA button */
+    border-radius: 8px; /* Uniform rounding for all buttons */
+    font-size: 1.1rem; /* Slightly larger font for visibility */
+    transition: all 0.3s ease;
+    background-color: #004d40; /* Main call-to-action button */
+    color: #fff; /* Text color */
+}
+
+.cta-button:hover {
+    background-color: #1c1c1c; /* Darker shade on hover */
+    box-shadow: 0 0 10px rgba(25, 169, 116, 0.8);
+}
+
+.whitepaper-btn {
+    padding: 12px 24px; /* Uniform padding for White Paper button */
+    background-color: transparent; /* Transparent background */
+    color: #1de9b6; /* Text color */
+    border: 2px solid #1de9b6; /* Outline */
+}
+
+.whitepaper-btn:hover {
+    background-color: #1de9b6; /* Background change on hover */
+    color: #1c1c1c; /* Text color on hover */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Reduced opacity for better visibility */
+    z-index: 0;
+}
+
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .how-to-buy, .tokenomics, .roadmap, .team {
+    background-color: #1c1c1c;
+    margin: 40px 0;
+    border-radius: 12px;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.about h2, .how-to-buy h2, .tokenomics h2, .roadmap h2, .team h2 {
+    color: #1de9b6;
+    font-family: 'Creepster', cursive;
+    margin-bottom: 20px;
+    font-size: 2.2rem; /* Increased for better section headers */
+}
+
+.how-to-buy .steps, .tokenomics .token-distribution, .roadmap .roadmap-timeline {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.how-to-buy .step, .tokenomics .token-section, .roadmap .phase {
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Added hover effect */
+}
+
+.how-to-buy .step:hover, .tokenomics .token-section:hover, .roadmap .phase:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Tokenomics Section */
+.tokenomics-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+.tokenomics-section h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 2.4rem;
+    color: #1de9b6;
+    margin-bottom: 40px;
+}
+
+.tokenomics-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.total-supply-box {
+    grid-column: span 2;
+    border: 2px solid #1de9b6;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.total-supply-box img {
+    max-width: 100px;
+    margin-top: 20px;
+}
+
+.token-box {
+    border: 2px solid #1de9b6;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.token-box h3 {
+    font-family: 'Creepster', cursive;
+    font-size: 1.2rem;
+    color: #1de9b6;
+    margin-bottom: 10px;
+}
+
+.token-box p {
+    font-size: 1.5rem;
+    color: #1de9b6;
+}
+
+.token-box:hover {
+    background-color: #1de9b6;
+    color: #1c1c1c;
+}
+
+/* roadmap section **/
+
+.roadmap-section {
+    background-color: #1c1c1c; /* Dark background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Centered text */
+    padding: 40px 20px; /* Padding for the section */
+    border-radius: 12px; /* Rounded corners */
+}
+
+.roadmap-section h2 {
+    font-family: 'Creepster', cursive; /* Custom font */
+    font-size: 2.4rem; /* Header font size */
+    margin-bottom: 20px; /* Space below the header */
+    color: #1de9b6; /* Header color */
+}
+
+.roadmap-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space between columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.phase {
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside each phase */
+    width: 30%; /* Adjust width for each phase */
+    margin: 10px; /* Margin around each phase */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.phase h3 {
+    font-family: 'Creepster', cursive; /* Custom font for phase titles */
+    font-size: 1.8rem; /* Title font size */
+    color: #1de9b6; /* Title color */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.phase ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.phase li {
+    margin-bottom: 10px; /* Space between items */
+    font-size: 1rem; /* Font size for items */
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.team h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 3rem;
+    color: #1de9b6;
+}
+
+.team-description {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+}
+
+.member img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    font-family: 'Creepster', cursive;
+    font-size: 1.5rem;
+    color: #1de9b6;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #1de9b6;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1de9b6;
+}
+
+/* Featured In Section */
+.featured-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+.featured-section h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 2.4rem;
+    color: #1de9b6;
+    margin-bottom: 20px;
+}
+
+.featured-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lion-image img {
+    width: 200px; /* Adjust the size as needed */
+    margin-right: 30px; /* Space between the lion and logos */
+}
+
+.featured-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid #1de9b6;
+    border-radius: 50px;
+    padding: 12px 24px;
+    width: 200px;
+    height: 80px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo-item img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.logo-item span {
+    font-family: 'Creepster', cursive;
+    font-size: 1rem;
+    color: #1de9b6;
+}
+
+.logo-item:hover {
+    background-color: #1de9b6;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.logo-item:hover span {
+    color: #1c1c1c;
+}
+
+/* FAQs section */
+.faq-section {
+    background-size: cover; /* Cover the entire background */
+    background-position: top; /* Position the image from the top */
+    background-attachment: fixed; /* Make the background fixed */
+    padding: 40px 0; /* Vertical padding */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Centered text */
+    position: relative; /* Position for pseudo-elements */
+    width: 100vw; /* Full viewport width */
+    left: 50%; /* Center it */
+    margin-left: -50vw; /* Negative margin to offset width */
+}
+
+.faq-content {
+    max-width: 800px; /* Limiting width for readability */
+    margin: 0 auto; /* Centering the content */
+    padding: 20px; /* Spacing around the content */
+    border-radius: 12px; /* Rounded corners for content */
+}
+
+.faq-section h2 {
+    font-family: 'Creepster', cursive; /* Custom font */
+    font-size: 2.2rem; /* Header font size */
+    margin-bottom: 20px; /* Space below the header */
+    color: #1de9b6; /* Header color */
+}
+
+.faq-item {
+    margin-bottom: 15px; /* Space between items */
+}
+
+.faq-question {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #1de9b6; /* Border for the question */
+    border-radius: 12px; /* Rounded corners */
+    padding: 15px; /* Padding around the button */
+    color: #1de9b6; /* Button text color */
+    font-family: 'Creepster', cursive; /* Custom font */
+    font-size: 1.1rem; /* Button font size */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    display: flex; /* Flex to align items */
+    justify-content: space-between; /* Space between text and arrow */
+    align-items: center; /* Center align items */
+}
+
+.arrow {
+    transition: transform 0.3s ease; /* Smooth transition for arrow */
+}
+
+.faq-answer {
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.3s ease; /* Add transition for the max-height */
+}
+
+.faq-question:hover {
+    background-color: rgba(102, 240, 192, 0.2); /* Light background on hover */
+}
+
+.faq-question.active + .faq-answer {
+    max-height: 100px; /* Adjust based on content size; you can also use a larger value */
+    display: block; /* Show when active */
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    z-index: 0; /* Ensure it's behind the text */
+}
+
+.faq-section h2,
+.faq-item,
+.faq-answer {
+    position: relative; /* Position relative to allow overlay visibility */
+    z-index: 1; /* Ensure text is above the background and overlay */
+}
+
+/* Arrow rotation when active */
+.faq-question.active .arrow {
+    transform: rotate(180deg); /* Rotate the arrow when active */
+}
+
+/* Join Our Community Section */
+.join-community {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.join-community .community-image img {
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+.join-community .community-content {
+    max-width: 60%;
+    padding-left: 20px;
+}
+
+.join-community h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #1de9b6;
+}
+
+.join-community p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.community-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.community-btn {
+    background-color: transparent;
+    color: #1de9b6;
+    border: 2px solid #1de9b6;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+.community-btn:hover {
+    background-color: #1de9b6;
+    color: #1c1c1c;
+}
+
+
+/* Footer */
+footer {
+    padding: 30px 0;  /* Increase padding */
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem; /* Slightly smaller text size */
+}
+
+footer .socials a {
+    color: #1de9b6;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+    color: #1de9b6;
+}
