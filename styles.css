@@ -287,20 +287,6 @@ section {
     margin: 0 auto;
 }
 
-.total-supply-box {
-    grid-column: span 2;
-    border: 2px solid #1de9b6;
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    position: relative;
-}
-
-.total-supply-box img {
-    max-width: 100px;
-    margin-top: 20px;
-}
-
 .token-box {
     border: 2px solid #1de9b6;
     border-radius: 12px;
