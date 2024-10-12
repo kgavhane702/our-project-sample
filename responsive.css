@@ -126,6 +126,7 @@ body {
         padding: 20px 15px;  /* Reduce padding for smaller screens */
         background-position: top center;
         background-size: cover;
+        background-attachment: fixed;
     }
 
     .hero h1 {
