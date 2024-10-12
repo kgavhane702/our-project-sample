@@ -1,5 +1,5 @@
-<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="28" cy="28" r="27.5" fill="#023535" stroke="#009999"/>
+<svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+<circle cx="28" cy="28" r="27.5" fill="#023535" stroke="#003930"/>
 <mask id="mask0_8_28" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="7" width="36" height="42">
 <path d="M10 7H46V48.3434H10V7Z" fill="white"/>
 </mask>
@@ -12,23 +12,23 @@
 <path d="M29.8987 37.1425C29.5883 36.9992 29.0112 36.5309 28.7113 36.4794C28.4505 36.4351 28.3755 36.6846 28.1514 36.6846C27.8853 36.6846 27.8613 36.3667 27.4737 36.5156C27.1717 36.6307 26.6949 37.0089 26.4056 37.1425C25.9198 37.3662 25.5615 36.9936 25.5615 37.1521C25.5615 37.4378 26.9235 38.8396 28.3103 38.7431C29.4894 38.661 30.745 37.474 30.745 37.1521C30.7442 36.996 30.3882 37.3678 29.8987 37.1425ZM27.0667 37.5384C27.2249 37.474 27.422 37.4322 27.7526 37.5175C28.3298 37.6663 28.7548 37.3807 29.1491 37.5054C29.1881 37.5151 29.224 37.5304 29.2578 37.5529C29.2705 37.577 28.35 38.698 27.0667 37.5384Z" fill="url(#paint4_radial_8_28)"/>
 <defs>
 <radialGradient id="paint0_radial_8_28" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(27.9401 27.7015) rotate(90) scale(20.5912 17.8766)">
-<stop stop-color="#009999"/>
+<stop stop-color="#003930"/>
 <stop offset="1" stop-color="#00D2D2"/>
 </radialGradient>
 <radialGradient id="paint1_radial_8_28" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(25.0814 31.1116) rotate(90) scale(2.34013 2.59802)">
-<stop stop-color="#009999"/>
+<stop stop-color="#003930"/>
 <stop offset="1" stop-color="#00D2D2"/>
 </radialGradient>
 <radialGradient id="paint2_radial_8_28" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(31.2264 31.1033) rotate(90) scale(2.32452 2.59942)">
-<stop stop-color="#009999"/>
+<stop stop-color="#003930"/>
 <stop offset="1" stop-color="#00D2D2"/>
 </radialGradient>
 <radialGradient id="paint3_radial_8_28" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.1505 34.88) rotate(90) scale(0.761315 1.59095)">
-<stop stop-color="#009999"/>
+<stop stop-color="#003930"/>
 <stop offset="1" stop-color="#00D2D2"/>
 </radialGradient>
 <radialGradient id="paint4_radial_8_28" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28.1532 37.611) rotate(90) scale(1.13685 2.59172)">
-<stop stop-color="#009999"/>
+<stop stop-color="#003930"/>
 <stop offset="1" stop-color="#00D2D2"/>
 </radialGradient>
 </defs>
