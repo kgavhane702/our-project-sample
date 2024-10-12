@@ -8,8 +8,15 @@
 }
 
 body {
-    font-family: 'Lora', serif;
-    background-color: #1c1c1c; /* Dark green background */
+    font-family: 'Lora', serif;    
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Full-width background alignment */
+    background-image: url('assets/hero-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed attachment */
+    background-repeat: no-repeat; /* Prevents repetition */
     color: #ffffff;
     font-size: 1.1rem; /* Slightly increased for better readability */
     line-height: 1.6;
@@ -139,11 +146,6 @@ header {
     align-items: center;
     min-height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
-    margin-left: calc(-50vw + 50%); /* Full-width background alignment */
-    background-image: url('assets/hero-background.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     text-align: center;
     padding: 60px 20px;
@@ -225,7 +227,7 @@ section {
 }
 
 .about, .how-to-buy, .tokenomics, .roadmap, .team {
-    background-color: #1c1c1c;
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 40px 0;
     border-radius: 12px;
     padding: 40px 20px;
@@ -262,7 +264,7 @@ section {
 .tokenomics-section {
     text-align: center;
     padding: 40px 20px;
-    background-color: #1c1c1c;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     margin-bottom: 40px;
     border-radius: 12px;
@@ -328,11 +330,12 @@ section {
 /* roadmap section **/
 
 .roadmap-section {
-    background-color: #1c1c1c; /* Dark background */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background */
     color: #ffffff; /* Text color */
     text-align: center; /* Centered text */
     padding: 40px 20px; /* Padding for the section */
     border-radius: 12px; /* Rounded corners */
+    margin-bottom: 40px;
 }
 
 .roadmap-section h2 {
@@ -444,7 +447,7 @@ section {
 .featured-section {
     text-align: center;
     padding: 40px 20px;
-    background-color: #1c1c1c;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     margin-bottom: 40px;
     border-radius: 12px;
@@ -522,6 +525,7 @@ section {
     width: 100vw; /* Full viewport width */
     left: 50%; /* Center it */
     margin-left: -50vw; /* Negative margin to offset width */
+    margin-bottom: 40px;
 }
 
 .faq-content {
@@ -606,13 +610,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1c1c1c;
     padding: 40px;
     border-radius: 12px;
-    margin-bottom: 40px;
     color: #ffffff;
     background-size: cover;
     background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .join-community .community-image img {
